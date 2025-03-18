@@ -59,6 +59,73 @@
   margin-left: auto;
   display: none;
 }
+.cards-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cards {
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  
+  align-items: center;
+}
+.bg-pink {
+  border: 2px solid #e6005c;
+  background-color: #e6005c;
+  color: white;
+}
+.media-icon {
+  width: 80px;
+  margin: 15px;
+}
+.media-heading {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+}
+.card-description {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 220px;
+}
+.card-user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.user-icon {
+  height: 25px;
+  margin-right: 5px;
+}
+.user-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-cards {
+  font-weight: bold;
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+.btn-cards-bg-black {
+  background-color: black;
+  color: #fff;
+}
+.btn-cards-bg-white {
+  background-color: white;
+  color: #e6005c;
+}
 /*Mobile Device*/
 @media (max-width: 600px) {
   #navbar {
@@ -78,4 +145,5 @@
     display: block;
     height: 25px;
   }
+  .cards {width: 100%};
 }
