@@ -33,7 +33,7 @@
   font-weight: bold;
 }
 #nav-links-container ul li:hover {
-  transition: all 1 linear 0;
+  transition: all 3s linear 0;
   transform: scale(1.1);
 }
 #nav-links-container ul li a {
@@ -74,10 +74,14 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  
   align-items: center;
 }
+
+.cards-container :hover .media-icon {
+  transition: 0.4s;
+  transform: scale(1.2);
+}
+
 .bg-pink {
   border: 2px solid #e6005c;
   background-color: #e6005c;
@@ -117,6 +121,7 @@
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   border: none;
+  cursor: pointer;
 }
 .btn-cards-bg-black {
   background-color: black;
@@ -145,5 +150,7 @@
     display: block;
     height: 25px;
   }
-  .cards {width: 100%};
+  .cards {
+    width: 100%;
+  }
 }
